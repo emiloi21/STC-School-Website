@@ -1,0 +1,91 @@
+h1, h2, h3, h4, h5, h6{
+    color: #075907;
+}
+
+/*Your smartphone screen width*/
+@media screen and (max-width:400px){
+  #myText{
+    display:none;
+  }
+}
+
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 4px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.icon-bar a:hover {
+    background-color: #e5eb0b;
+    opacity: 1.0;
+}
+
+.facebook {
+  background: transparent;
+  color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #097609;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 15px;
+ 
+}
+
+.sidenav a, .sidenav p {
+    padding: 8px 8px 0px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #e5eb0b;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 4px;
+}
+
+.sidenav p {
+    padding: 8px 8px 0px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #e5eb0b;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 4px;
+}
+
+.sidenav a:hover {
+    color: #b9d40b;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 32px;
+    margin-left: 50px; 
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 12px;}
+  .sidenav a {font-size: 14px;}
+}
